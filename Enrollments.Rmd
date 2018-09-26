@@ -7,4 +7,14 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 ```
+
+```{r}
+x <- readRDS("~/Class1 Data/class-2018-09-26-enrollments/enrollment.rds") %>% 
+  select(u_grad, course_name)
+
+x
+```
+
+
